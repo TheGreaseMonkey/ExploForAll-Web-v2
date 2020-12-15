@@ -7,10 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DefaultComponent } from './layout/default/default.component';
 import { AdminDashboardComponent } from './modules/admin-dashboard/admin-dashboard.component';
 import { DefaultModule } from './layout/default/default.module';
+import { AdminOverviewComponent } from './modules/admin-overview/admin-overview.component';
+import { AdminUserComponent } from './modules/admin-user/admin-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AdminOverviewComponent,
+    AdminUserComponent,
   ],
   imports: [
     BrowserModule,

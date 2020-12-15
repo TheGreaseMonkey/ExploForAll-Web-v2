@@ -1,1 +1,46 @@
-<p>admin-dashboard works!</p>
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened="true">
+
+        <div class="center-content">
+            <img src="../../../assets/Scouting.png" alt="">
+        </div>
+
+        <mat-divider></mat-divider>
+
+        <mat-selection-list #shoes [multiple]="false">
+            <a routerLink="/">
+                <mat-list-option>
+                    Dashboard
+                </mat-list-option>
+            </a>
+            <a routerLink="/users">
+                <mat-list-option>
+                    Gebruikers
+                </mat-list-option>
+            </a>
+            <a routerLink="/questions">
+                <mat-list-option>
+                    Vragen
+                </mat-list-option>
+            </a>
+            <a routerLink="/banner">
+                <mat-list-option>
+                    Banner
+                </mat-list-option>
+            </a>
+            <a routerLink="/log">
+                <mat-list-option>
+                    Logboek
+                </mat-list-option>
+            </a>
+        </mat-selection-list>
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-card>
+            <h1>
+                BONJOUR
+            </h1>
+            <router-outlet></router-outlet>
+        </mat-card>
+    </mat-drawer-content>
+  </mat-drawer-container>
