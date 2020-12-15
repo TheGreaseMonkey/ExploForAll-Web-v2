@@ -9,12 +9,18 @@ import { AdminDashboardComponent } from './modules/admin-dashboard/admin-dashboa
 import { DefaultModule } from './layout/default/default.module';
 import { AdminOverviewComponent } from './modules/admin-overview/admin-overview.component';
 import { AdminUserComponent } from './modules/admin-user/admin-user.component';
+import { AdminQuestionsComponent } from './modules/admin-questions/admin-questions.component';
+import { AdminBannerComponent } from './modules/admin-banner/admin-banner.component';
+import { AdminLogComponent } from './modules/admin-log/admin-log.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminOverviewComponent,
     AdminUserComponent,
+    AdminQuestionsComponent,
+    AdminBannerComponent,
+    AdminLogComponent,
   ],
   imports: [
     BrowserModule,
